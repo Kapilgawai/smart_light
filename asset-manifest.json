@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/smart_light/static/css/main.10b5b3ae.css",
+    "main.js": "/smart_light/static/js/main.78579ff3.js",
+    "static/js/453.61e96e46.chunk.js": "/smart_light/static/js/453.61e96e46.chunk.js",
+    "static/media/earth.mp4": "/smart_light/static/media/earth.bc513a31472c7ce3d119.mp4",
+    "static/media/Footer.png": "/smart_light/static/media/Footer.60cebb0a730fbf0982d4.png",
+    "static/media/div.jpg": "/smart_light/static/media/div.7cf180729b7728340dc9.jpg",
+    "static/media/smart lights_logo.svg": "/smart_light/static/media/smart lights_logo.d067282599462ac0307e8e555b0357ca.svg",
+    "index.html": "/smart_light/index.html",
+    "main.10b5b3ae.css.map": "/smart_light/static/css/main.10b5b3ae.css.map",
+    "main.78579ff3.js.map": "/smart_light/static/js/main.78579ff3.js.map",
+    "453.61e96e46.chunk.js.map": "/smart_light/static/js/453.61e96e46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10b5b3ae.css",
+    "static/js/main.78579ff3.js"
+  ]
+}
