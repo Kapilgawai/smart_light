@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 180px;
+    background-color: #000408;
+    color: #ffffff;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+    font-weight: 100;
+    margin-left: 120px;
+    transition: transform 0.3s ease, filter 0.3s ease, color 1.5s ease;
+  }
+  
+  .logo-container:hover .logo {
+    transform: scale(1.4);
+    filter: drop-shadow(0 0 20px rgba(255, 255, 0, 1)); /* Increase drop shadow intensity */
+    color: rgba(255, 255, 0, 1); /* Bright yellow color */
+  }
+
+
+
+.login-button:hover span {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), /* Glowing white shadow */
+                 0 0 20px rgba(224, 224, 224, 0.849), /* Larger glow */
+                 0 0 30px rgb(194, 194, 194); /* Even larger glow */
+    color: #fff; /* Ensures the text color stays white */
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 400px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .nav-links li {
+    margin: 0 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #2b6ff7;
+  }
+  
+  .login-button {
+    position: relative;
+    display: inline-block;
+    padding: 18px 65px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #2b6ff7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.2s, transform 0.2s, font-size 0.3s, text-shadow 0.3s, top 0.3s;
+    margin-right: 180px;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+  }
+  
+  .login-button span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .login-button::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #4b9fff;
+    transition: width 0.3s, height 0.3s;
+    pointer-events: none;
+  }
+  
+  .login-button:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .login-button:hover {
+    background-color: #097eff;
+   
+   
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-button:hover span {
+    transform: translateY(-5px); /* Move the text up by 5px */
+  }
+  
+  .login-button:active span {
+    transform: translateY(0); /* Move the text back down on click */
+  }
+  

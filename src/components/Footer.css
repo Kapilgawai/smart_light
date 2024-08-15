@@ -1,0 +1,107 @@
+
+
+       .footer {
+        background-size: cover;
+        background-position: center;
+        padding: 80px 0;
+        color: #ffffff;
+        text-align: center;
+        height: 280px;
+      }
+      
+      .footer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+        color: #ffffff;
+        width: 100%; 
+        box-sizing: border-box;
+      }
+      
+      .logo-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .logo {
+        height: 35px;
+        margin-left: 120px;
+        transition: transform 0.3s ease, filter 0.3s ease, color 1.5s ease;
+      }
+      
+      .nav-links {
+        display: flex;
+        list-style: none;
+        margin-right: 300px;
+        font-family: 'Open Sans', sans-serif;
+        gap: 50px;
+      }
+      
+      .nav-links li {
+        margin: 0 25px;
+      }
+      
+      .nav-links a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        transition: color 0.3s, text-shadow 0.3s;
+      }
+      
+
+      .navfooter {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 120px;
+        margin-left: 100px;
+        padding: 15px;
+        position: relative;
+    }
+    
+    .navfooter::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30%;
+        border-top: 1px solid rgba(255, 255, 255, 0.285);
+        z-index: 1; 
+    }
+    
+    .nav-links2 {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        z-index: 2; 
+    }
+    
+    .nav-links2 li {
+        display: flex;
+        align-items: center;
+        padding-right: 25px;
+    }
+    
+    .nav-links2 p {
+        margin: 0;
+        padding-right: 20px;
+        position: relative;
+    }
+    
+    .nav-links2 p::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.369);
+    }
+    
+    .nav-links2 li:last-child p::after {
+        display: none;
+    }
+    

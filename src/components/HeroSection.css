@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .header {
+    backdrop-filter: blur(2px); 
+  -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 180px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000; 
+        box-sizing: border-box; 
+        white-space: nowrap;
+
+
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-left: 120px;
+    transition: transform 0.3s ease, filter 0.3s ease, color 1.5s ease;
+  }
+  
+  .logo-container:hover .logo {
+    transform: scale(1.4);
+    filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+    color: rgb(255, 255, 255);
+  }
+  
+  
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 400px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .nav-links li {
+    margin: 0 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  .login-button {
+    position: relative;
+    display: inline-block; 
+    padding: 15px 85px !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #2b6ff7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.2s, transform 0.2s, font-size 0.3s, text-shadow 0.3s, top 0.3s;
+    margin-right: 500px !important; 
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+  
+.login-button span {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  .login-button::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #4b9fff;
+    transition: width 0.3s, height 0.3s;
+    pointer-events: none;
+  }
+  
+  .login-button:hover::before {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .login-button:hover {
+    background-color: #097eff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .login-button:hover span {
+    transform: translateY(0); 
+  }
+  
+  .login-button:active span {
+    transform: translateY(0); 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.502); 
+    z-index: 0; 
+  }
+  
+  .overlay {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 2; 
+  }
+
+
+  h2{
+    font-size: 32px;
+  color: #ffffff;
+    margin: 0 auto 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+ 
+    h1 {
+    font-size: 55px;
+  color: #7995ac;
+    margin: 0 auto 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    text-shadow: 0 6px 20px;
+
+
+  }
+  
+  .hero-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 65px;
+    font-weight: 100;
+    font-size: 25px;
+    background-color: #2b6ff7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.2s, transform 0.2s, font-size 0.3s, text-shadow 0.3s, top 0.3s;
+    margin-right: 60px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+  }
+  
+
+  .hero-button span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-button::before {
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #4b9fff;
+    transition: width 0.3s, height 0.3s;
+    pointer-events: none;
+  }
+  
+  .hero-button:hover::before {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .hero-button:hover {
+    background-color: #097eff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-button:hover span {
+    transform: translateY(-8px); /* Move the text up by 5px */
+  }
+  
+  .hero-button:active span {
+    transform: translateY(0); /* Move the text back down on click */
+  }
+  
+
+
+
+
+
+
+  .header {
+    backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 180px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    box-sizing: border-box; 
+    transition: all 0.3s ease; /* Transition for smooth shrinking */
+  }
+  
+  .header-shrink {
+    padding: 10px 80px; 
+    background: rgba(0, 0, 0, 0.5); /* Slightly more opaque background */
+    opacity: 0.8;
+    backdrop-filter: blur(0.1px); 
+
+  }
+  
+  .header-shrink .logo {
+    height: 40px; /* Smaller logo size */
+    margin-left: 20px; /* Move logo to the left */
+    opacity: 0.8;
+
+  }
+  
+  .header-shrink .nav-links {
+    margin-left: auto; /* Move nav links to the right */
+  }
+  
+  .header-shrink .login-button {
+    margin-left: 600px; /* Move login button to the right edge */
+    font-size: 0.8rem; /* Smaller button size */
+    padding: 10px 30px; /* Adjust padding */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-left: 120px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 400px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .nav-links li {
+    margin: 0 25px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.products {
+  padding: 60px 20px;
+  background: linear-gradient(to left, #ffffff 10%, #aeddffb4 60%);
+  text-align: center;
+}
+
+.products-header {
+  margin-left: 250px;
+}
+
+.highlight {
+  font-weight: 700; 
+}
+
+.products-header h3 {
+  color: #152940;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: left;
+  background: linear-gradient(to right, #ffffffc5 20%, #ffffff00 50%);
+  width: 10%;
+  padding: 18px 30px;
+}
+
+.products-header h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}  
+  .product-tabs {
+    display: flex;
+    margin-left: 250px;
+    gap: 30px;
+  }
+  
+
+  .product-tabs button{
+    padding: 15px;
+background: none;
+border: none;
+outline: 1px solid #161616;
+color: #161616;
+}
+
+.custom-button {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 30px;
+  padding: 15px;
+  background: none;
+  border: none;
+  outline: 0.9px solid #161616;
+  color: #161616;
+}
+
+.custom-button:hover {
+  background: linear-gradient(to right, #2b6ff77f 20%, #ffffff00 50%);
+  outline: 1px solid #0055ff;
+}
+
+
+  .product-tabs button:hover {
+    background: linear-gradient(to right, #2b6ff77f 20%, #ffffff00 50%);
+    outline: 1px solid #0055ff;
+  }
+  
+  .product-display {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 250px;
+
+
+  }
+  
+.product-info {
+  display: flex;
+  width: 80%;
+}
+
+.image-container {
+  flex: 1;
+  background: url('../assets/images/div.jpg') no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 0 5px;
+
+}
+
+.text-container {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(to left, #2b6ff714 20%, #ffffff 50%);
+  text-align: center;
+ display: flex;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ box-shadow: 0 0 5px;
+}
+
+.text-container h1 {
+  font-size: 45px;
+  color: #000;
+  margin-bottom: 10px;
+  text-shadow: none;
+  
+}
+
+.text-container p {
+  font-size: 23px;
+  color: #333;
+}
