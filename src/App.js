@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      
+      <Header />
       <HeroSection />
       <EcosystemSection />
       <ProductsSection />
